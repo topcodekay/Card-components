@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.3;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffff;
+  border: 1px solid gainsboro;
+}
+
+.hidden {
+  display: none;
+}
+
+.main__box {
+  display: flex;
+  gap: 30px;
+}
+
+.img__box {
+  width: 100%;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.info__box {
+  width: 85%;
+  padding: 17px;
+  margin: 8px;
+  height: 100%;
+}
+
+.fade {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 35.6px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.info {
+  font-size: 19px;
+  padding-bottom: 27px;
+}
+
+.price {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding-bottom: 27px;
+}
+
+.price h4 {
+  font-size: 38px;
+  color: seagreen;
+}
+
+.button {
+  padding-top: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 0;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffff;
+  background-color: seagreen;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    font-size: 16px;
+    padding: 17%;
+    margin: 20% auto;
+    /* height: 790px; */
+    background-color: blanchedalmond;
+    border-radius: 10px;
+  }
+
+  .main__box {
+    /* height: 100%; */
+    display: flex;
+    background-color: #ffff;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .info__box {
+    width: auto;
+    /* top: 10px; */
+    height: 100%;
+    /* margin: 10px; */
+  }
+
+  .img__box {
+    top: 0;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  img {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .active {
+    display: none;
+  }
+}
